@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+#part1 #title, #part2 #title, #part1 #editor, #part2 #preview {
+  -moz-box-shadow: 1px 1px 10px 2px #705f65;
+  -webkit-box-shadow: 1px 1px 10px 2px #705f65;
+  box-shadow: 1px 1px 10px 2px #705f65;
+}
+
+#part1 #title, #part2 #title {
+  color: black;
+  background-color: #61575b;
+  border: 1px solid black;
+  position: relative;
+  padding-left: 5px;
+  font-family: Open Sans;
+  font-size: 20px;
+}
+
+body {
+  background-color: #A39298;
+}
+
+#part1 {
+  height: 385px;
+  width: 506px;
+  margin: auto;
+}
+#part1 .fas {
+  margin-right: 5px;
+}
+#part1 #editor {
+  margin-top: -25px;
+  padding-top: 15px;
+  height: 300px;
+  width: 500px;
+  resize: none;
+  background-color: #d1c8cb;
+  border: 1px solid black;
+}
+
+#part2 {
+  max-width: 800px;
+  margin: auto;
+}
+#part2 .fas {
+  margin-right: 5px;
+}
+#part2 #preview {
+  background-color: #d1c8cb;
+  padding-left: 20px;
+  margin-top: -25px;
+  border: 1px solid black;
+}
+
+#preview pre {
+  background: white;
+  margin-right: 20px;
+  padding: 5px 0 5px 5px;
+}
+#preview code {
+  background: white;
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview td, #preview th {
+  border: 2px solid black;
+  padding: 2px;
+}
+#preview img {
+  width: 700px;
+  padding: 10px;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  #preview img {
+    width: 90%;
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$dark-color: #61575b;
+$medium-color: #A39298;
+$light-color: #d1c8cb;
+$text-color: black;
+
+%shadow {
+  -moz-box-shadow:    1px 1px 10px 2px darken($medium-color, 20%);
+  -webkit-box-shadow: 1px 1px 10px 2px darken($medium-color, 20%);
+  box-shadow:         1px 1px 10px 2px darken($medium-color, 20%);
+}
+%title {
+  color: $text-color;
+  background-color: $dark-color;
+  border: 1px solid $text-color;
+  @extend %shadow;
+  position: relative;
+  padding-left: 5px;
+  font-family: Open Sans;
+  font-size: 20px;
+}
+
+body {
+  background-color: $medium-color;
+}
+#part1 {
+  height: 385px;
+  width: 506px;
+  margin: auto;
+  .fas {
+    margin-right: 5px;
+  }
+  #title {
+    @extend%title;
+  }
+  #editor {
+    margin-top: -25px;
+    padding-top: 15px;
+    height: 300px;
+    width: 500px;
+    resize: none;
+    background-color: $light-color;
+    border: 1px solid $text-color;
+    @extend %shadow;
+  }
+}
+#part2 {
+  max-width: 800px;
+  margin: auto;
+  .fas {
+    margin-right: 5px;
+  }
+  #title {
+    @extend%title;
+  }
+  #preview {
+    background-color: $light-color;
+    padding-left: 20px;
+    margin-top: -25px;
+    border: 1px solid $text-color;
+    @extend %shadow;
+  }
+}
+//MARKDOWN STYLES
+#preview {
+  pre {
+    background: white;
+    margin-right: 20px;
+    padding: 5px 0 5px 5px;
+  }
+  code {
+    background: white;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  td, th {
+    border: 2px solid black;
+    padding: 2px;
+  }
+  img {
+    width: 700px;
+    padding: 10px;
+    margin: auto;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
+  }
+}
